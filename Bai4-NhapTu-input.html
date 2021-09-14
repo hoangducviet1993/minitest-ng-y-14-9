@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4 chu vi va diện tích hình vuông cạnh a</title>
+</head>
+<body>
+<input type="text" id="doDaia">
+<button onclick="nhapSo()">Nhập</button>
+<h3 id="chuvi"> Chu Vi Hình Vuông:</h3>
+<h3 id="dientich"> Diện Tích Hình Vuông:</h3>
+<script>
+    function nhapSo() {
+        let a = document.getElementById("doDaia").value;
+        let P = a * 4;
+        let S = a*a;
+        document.getElementById('chuvi').innerHTML ='Chu Vi Hình Vuông: ' + P;
+        document.getElementById('dientich').innerHTML ='Diện Tích Hình Vuông: ' + S;
+    }
+</script>
+
+</body>
+</html>

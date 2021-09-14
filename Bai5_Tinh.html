@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="sta">
+<input type="text" id="stb">
+<button onclick="nhapSo()"> Nhập</button>
+<h1 id="res">a Bình phuong :</h1>
+<h1 id="res2">a ngũ b :</h1>
+<script>
+    function nhapSo(){
+        let a = document.getElementById("sta").value;
+        let b = document.getElementById("stb").value;
+        let S = a * a;
+        let C = a**b;
+        document.getElementById("res").innerHTML='a Bình phuong :'+ S;
+        document.getElementById("res2").innerHTML= 'a ngũ b :' +C;
+
+    }
+
+</script>
+</body>
+</html>
