@@ -9,7 +9,7 @@
 <input type="text" id="st2">
 <input type="text" id="st3">
 <button onclick="nhapSo()"> Nhập</button>
-<h1 id="res">Tổng từ a đến b:</h1>
+<h1 id="res">Nhập cạnh a ,b ,c:</h1>
 <script>
     function nhapSo(){
         let a = document.getElementById("st1").value;
@@ -20,15 +20,24 @@
                if (a == b && b==c){
                    document.getElementById("res").innerHTML ='Đây Là tam giác đều';
                }
+               else { if((a=b) && (a=c) || (b=c) && (b=c)||(c=a)&&(c=b) ){
+                   document.getElementById("res").innerHTML ='Đây Là tam giác cân';
+               } else{if((a * a == b*b + c*c)||(b*b == a * a + c * c)|| (c * c == a*a + b*b) ){
+                   document.getElementById("res").innerHTML ='Đây Là tam giác Vuông';
+               } else {
+                   document.getElementById("res").innerHTML ='Đây Là một tam giác ' ;
+               }
+
+               }
+
+
+               }
            }
        }
 
 
-
-
-        document.getElementById("res").innerHTML ='Tổng từ a đến b'+S ;
-
     }
 </script>
+
 </body>
 </html>
